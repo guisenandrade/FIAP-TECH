@@ -1,1 +1,1 @@
-# FIAP-TECH
+# dar o comando npm i e para iciar o projeto npm start
