@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <style>
+    body {
+      background: url('https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-hexadecimal-para-redes_23-2150080754.jpg?w=1060&t=st=1700161085~exp=1700161685~hmac=11200cc1cc1797c43c10781854f35f889864c9f7dfd6f931874734f3b6d2922d') center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="back-arrow" onclick="window.location.href='pagina-inicial.html'">&#9665;</div>
+  <h2>Login</h2>
+  <form action="cadastrousuario.html" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="senha" required>
+
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+
+</body>
+</html>
