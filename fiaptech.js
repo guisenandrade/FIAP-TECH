@@ -92,6 +92,11 @@ app.post("/cadastroproduto", async(req,res)=>{
         return res.status(400).json({error:"este código já foi cadastrado para outro produto"})
     }
 
+    if(quantidadestoque<=1 || quantidadestoque>=50){
+        return res.status(400).json({error:"O numero de estoque é limitado, por favor colocar entre 1 e 50"})
+
+    }
+
     const produto = new Produto({
         codigo: codigo,
         descricao: descricao,
